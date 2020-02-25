@@ -212,7 +212,7 @@ background-color: #70ad65;;
 /* ******************* */
 .page-organizer {
   display: flex;
-    justify-content: space-between;
+    justify-content: center;
     /* height: 100%; */
 }
 .WfolderContainer {
