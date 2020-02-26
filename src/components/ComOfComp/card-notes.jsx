@@ -8,6 +8,7 @@ class Cardnotes extends Component {
         console.log(id)
         console.log('deleting')
         Axios.delete(`https://ironrest.herokuapp.com/Melvin/${id}`).catch(err => console.log(err))
+        this.props.renderingNotes(id)
         this.props.rendering(id)
     }
   render() {

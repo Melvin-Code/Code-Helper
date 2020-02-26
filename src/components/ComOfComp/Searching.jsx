@@ -40,7 +40,7 @@ class Searching extends Component {
           <input className='bar'
             onChange={this.handleChange}
             type="text"
-            placeholder="Search"
+            placeholder=" Search"
             name="search"
           ></input>
           <input className='submit' type="submit"></input>

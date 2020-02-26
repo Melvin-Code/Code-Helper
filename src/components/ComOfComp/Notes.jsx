@@ -41,13 +41,24 @@ class Notes extends Component {
       return (
         <Cardnotes
           key={key}
-          title={each.title}
-          content={each.link}
+          title={each.item.title}
+          content={each.item.link}
           rendering={this.props.rendering}
           id={each._id}
         />
       );
     });
+  };
+  ;
+  
+  renderingNotes = (id) => {
+    
+    let copyOfNotes = [...this.state.takeNotes];
+    copyOfNotes = copyOfNotes.filter(copyOfNotes => copyOfNotes._id !== id);
+    this.setState({
+      takeNotes: copyOfNotes
+    });
+    console.log("you just render");
   };
   DSaveNotes = () => {
     console.log(this.props);
@@ -58,6 +69,7 @@ class Notes extends Component {
         return (
           <Cardnotes
             rendering={this.props.rendering}
+            renderingNotes={this.renderingNotes}
             title={each.item.title}
             content={each.item.link}
             id={each._id}
@@ -76,13 +88,13 @@ class Notes extends Component {
             <form className='freakingNote' onSubmit={this.handleSubmit}>
               <input className='barTitle'
                 onChange={this.handleChange}
-                placeholder="Title"
+                placeholder=" Title"
                 name="title"
                 type="text"
               />
               <input className='barLink'
                 onChange={this.handleChange}
-                placeholder="Link"
+                placeholder=" Link"
                 name="content"
                 type="text"
               />

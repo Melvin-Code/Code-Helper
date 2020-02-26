@@ -166,7 +166,7 @@ body {
 
 
 .bar{
-  border-radius: .8rem;
+  border-radius: .7rem;
   border: none;
   height: 2rem;
     width: 18rem;
@@ -179,13 +179,13 @@ body {
   border-bottom-right-radius: .8rem;
   border-top-right-radius: .8rem;
   border: none;
-  background-color: white;
+  background-color: #d5a040;
     height: 2rem;
     width: 5.5rem;
     transition: all .6s;
 }
 .submit:hover{
-background-color: #d5a040;
+background-color: #70ad65;;
 }
 .nav-bar > a {
   text-decoration: none;
@@ -333,6 +333,7 @@ background-color: #d5a040;
     background-color: white;
   color: #8a5f12;
   width: 100%;
+  padding: .35rem;
 }
 .barLink{
   
@@ -340,13 +341,15 @@ background-color: #d5a040;
   height: 2rem;
     width: 100%;
     background-color: white;
-  color: #8a5f12
+  color: #8a5f12;
+  padding: .35rem;
 }
 .freakingNote{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  
 }
 .submit2{
   /* position: relative; */
