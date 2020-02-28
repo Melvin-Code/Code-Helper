@@ -16,8 +16,9 @@ class Cardnotes extends Component {
     return (
       <li className="note-card">
         <h2>{this.props.title}</h2>
-        <p contentEditable="false" ><a className='link' href={this.props.content}>{this.props.content}</a></p>
+        <p contentEditable="false" ><a className='link' >{this.props.content}</a></p>
         <button onClick={()=> this.deleteCards(this.props.id)} className="close-btn">Delete</button>
+        <a className='linking' target="blank" href={this.props.content}>Link</a>
         {/* <button onClick={() => this.props.deleteFuncFromApp.js(this.props.id)}>delete</button>
         <button onClick={() => this.funcyouwillcreate(this.props.id)}></button> */}
         {/* <button onClick={this.props.createNewNote}>Save</button> */}

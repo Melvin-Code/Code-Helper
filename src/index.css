@@ -25,7 +25,7 @@ body {
   /* background-size: cover; */
 
   /* width: 100%; */
-  height: 76.9rem !important;
+  height: 100vh !important;
   margin: 0rem;
   padding: 0rem;
   background-size: cover;
@@ -265,9 +265,9 @@ background-color: #70ad65;;
   top: 19rem;
   right: .0rem;
   height: 7rem;
-  width: 31rem;
+  width: 15.5rem;
   border-bottom-right-radius: .5rem;
-  border-bottom-left-radius: .5rem;
+  /* border-bottom-left-radius: .5rem; */
   color: #282828;
   font-weight: 900;
   font-size: x-large;
@@ -278,10 +278,48 @@ background-color: #70ad65;;
   cursor: pointer;
   background-color: #bf1212; 
   color:#eee;
- 
-  
+   
   transition: all .6s cubic-bezier(0.77, 0, 0.175, 1);
 
+}
+.close-btn:active{
+  top: 19.18rem
+}
+/* .linking > a{
+  text-decoration: none;
+  color: #222;
+}
+
+.linking > a:hover{
+  text-decoration: none;
+  color: white;
+} */
+.linking{
+  border: none;
+    background-color: #d5a040;
+    position: absolute;
+    top: 19rem;
+    right: 15.5rem;
+    height: 7rem;
+    width: 15.5rem;
+    /* border-bottom-right-radius: .5rem; */
+    border-bottom-left-radius: .5rem;
+    color: #282828;
+    font-weight: 900;
+    font-size: x-large;
+    transition: all .4s;
+    text-align: center;
+    vertical-align: 2rem;
+    text-decoration: none;
+    padding-top: 1.8rem
+}
+.linking:hover{
+  background-color: #70ad65;
+  color: white  ;
+  
+}
+.linking:active{
+  top: 19.18rem
 }
 /* .WfolderContainer > hr{
   display: flex;
@@ -302,9 +340,8 @@ background-color: #70ad65;;
   top: 19rem;
   right: .0rem;
   height: 7rem;
-  width: 31rem;
+  width: 15.5rem;
   border-bottom-right-radius: .5rem;
-  border-bottom-left-radius: .5rem;
   color: #282828;
   font-weight: 900;
   font-size: x-large;
@@ -312,8 +349,11 @@ background-color: #70ad65;;
 }
 .saving:hover{
   background-color: #70ad65;
-  color: #222
+  color: white
 
+}
+.saving:active{
+  top: 19.18rem
 }
 .fixIt{
   margin-top: 80px;
