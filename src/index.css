@@ -58,7 +58,8 @@ body {
 .takeMeToSearch > a {
   display: inline-block;
   padding: 0.35em 1, 2em;
-  border: 0.1em solid #d5a040;
+  border-top: 0.25rem solid #d5a040;
+    border-bottom: .25rem solid #d5a040;
   margin: 0 0.3em 0.3em 0;
   border-radius: 0.12em;
   box-sizing: border-box;
@@ -404,4 +405,7 @@ body {
   color: black;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #d5a040;
+}
+.takeMeToSearch{
+  border: 3rem
 }
