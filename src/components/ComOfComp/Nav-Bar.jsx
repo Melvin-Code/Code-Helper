@@ -13,7 +13,7 @@ class NavBar extends Component {
         <Link to="/HomePage">Home</Link>
         <Searching travel={this.props.travel} toggleSearch={this.props.toggleSearch}/>
         <Link to="/WorkPage">Work Space</Link>
-        <Link to="/VideoPage">Videos</Link>
+        {/* <Link to="/VideoPage">Videos</Link> */}
       </nav>
     );
   }

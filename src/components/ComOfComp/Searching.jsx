@@ -36,14 +36,14 @@ class Searching extends Component {
   render() {
     return (
       <div>
-        <form onSubmit={this.handleSubmit}>
-          <input
+        <form className='searchBar' onSubmit={this.handleSubmit}>
+          <input className='bar'
             onChange={this.handleChange}
             type="text"
             placeholder="Search"
             name="search"
           ></input>
-          <input type="submit"></input>
+          <input className='submit' type="submit"></input>
         </form>
       </div>
     );

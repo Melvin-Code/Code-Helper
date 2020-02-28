@@ -10,7 +10,7 @@ class WelcomePage extends Component {
                  </a></Link>
                  <img className='LogoWP'src="/Asset2.svg"/>
                  <div className='takeMeToSearch'>
-                 <Link   to='workPage'><button className='btn2' ><i className="fas fa-search"></i></button></Link>
+                 <Link   to='workPage'><button className='sbtn' >Start Searching</button></Link>
                  </div>
                  {/* <form>
                     <input type='text' placeholder='Search' />

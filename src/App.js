@@ -20,6 +20,12 @@ class App extends Component {
         savedNotes: res.data
       });
     });
+
+    Axios.post("https://ironrest.herokuapp.com/createCollection/Melvin").catch(
+      err => {
+        console.log(err);
+      }
+    );
   }
   addNewNotes = note => {
     console.log(this.state.savedNotes, note);

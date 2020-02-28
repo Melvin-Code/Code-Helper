@@ -5,6 +5,8 @@ class Cardnotes extends Component {
 
     deleteCards = (id) => {
         console.log(this.props)
+        console.log(id)
+        console.log('deleting')
         Axios.delete(`https://ironrest.herokuapp.com/Melvin/${id}`).catch(err => console.log(err))
         this.props.rendering(id)
     }
@@ -13,8 +15,8 @@ class Cardnotes extends Component {
     return (
       <li className="note-card">
         <h2>{this.props.title}</h2>
-        <p contentEditable="true">{this.props.content}</p>
-        <div onClick={()=> this.deleteCards(this.props.id)} className="close-btn">&times;</div>
+        <p contentEditable="false" ><a className='link' href={this.props.content}>{this.props.content}</a></p>
+        <button onClick={()=> this.deleteCards(this.props.id)} className="close-btn">Delete</button>
         {/* <button onClick={() => this.props.deleteFuncFromApp.js(this.props.id)}>delete</button>
         <button onClick={() => this.funcyouwillcreate(this.props.id)}></button> */}
         {/* <button onClick={this.props.createNewNote}>Save</button> */}

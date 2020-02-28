@@ -14,11 +14,11 @@ class SearchCards extends Component {
     return (
       <li className="note-card">
         <h2>{this.props.title}</h2>
-        <p contentEditable="true">{this.props.content}</p>
-        <div onClick={()=> this.deleteCards(this.props.id)} className="close-btn">&times;</div>
+        <p contentEditable="false" ><a className='link' href={this.props.content}>{this.props.content}</a></p>
+        {/* <div onClick={()=> this.deleteCards(this.props.id)} className="close-btn">&times;</div> */}
         {/* <button onClick={() => this.props.deleteFuncFromApp.js(this.props.id)}>delete</button>
         <button onClick={() => this.funcyouwillcreate(this.props.id)}></button> */}
-        <button onClick={this.props.createNewNote}>Save</button>
+        <button className='saving' onClick={this.props.createNewNote}>Save</button>
       </li>
     );
   }

@@ -74,7 +74,7 @@ class WorkPage extends Component {
               items={this.state.items}
             />
           )}
-          <button className="editor">Edit</button>
+          {/* <button className="editor">Edit</button> */}
         </section>
       </div>
     );
