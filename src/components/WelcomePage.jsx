@@ -9,6 +9,7 @@ class WelcomePage extends Component {
                 <i className="fas fa-home"/>
                  </a></Link>
                  <img className='LogoWP'src="/Asset2.svg"/>
+                 <p className='final'>REMEMBERING FOR YOU</p>
                  <div className='takeMeToSearch'>
                  <Link   to='workPage'><button className='sbtn' >Start Searching</button></Link>
                  </div>
