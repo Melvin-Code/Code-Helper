@@ -145,6 +145,9 @@ body {
   max-width: 5rem;
 }
 .nav-bar {
+  position: fixed;
+  z-index: 30;
+  width: 100vw;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -233,6 +236,8 @@ background-color: #d5a040;
   position: relative;
   overflow: hidden;
   height: auto;
+ padding: inherit;
+ width: 35rem;
 }
 .separator {
   display: flex;
@@ -309,4 +314,52 @@ background-color: #d5a040;
   background-color: #70ad65;
   color: #222
 
+}
+.fixIt{
+  margin-top: 80px;
+}
+.fixIt2{
+  margin-top: 50px;
+}
+.fixIt3{
+  margin-top: 8rem;
+}
+.barTitle{
+  /* border-bottom-left-radius: .8rem; */
+  border-top-left-radius: .8rem;
+  border: none;
+  height: 2rem;
+    width: 18rem;
+    background-color: white;
+  color: #8a5f12;
+  width: 100%;
+}
+.barLink{
+  
+  border: none;
+  height: 2rem;
+    width: 100%;
+    background-color: white;
+  color: #8a5f12
+}
+.freakingNote{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.submit2{
+  /* position: relative; */
+  width: 100%;
+  right: 3rem;
+  border-bottom-right-radius: .8rem;
+  /* border-top-right-radius: .8rem; */
+  border: none;
+  background-color: #d5a040;
+    height: 2rem;
+    width: 100%;
+    transition: all .6s;
+}
+.submit2:hover{
+background-color: #70ad65;
 }

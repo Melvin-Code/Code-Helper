@@ -7,7 +7,7 @@ class DisplaySearch extends Component {
     console.log(this.props);
     // console.log(this.state);
     return (
-      <div>
+      <div className="fixIt">
         {/* <Cardnotes title={this.props.title} content={this.props.question} /> */}
         {this.props.items.map((item, i) => (
           <SearchCards

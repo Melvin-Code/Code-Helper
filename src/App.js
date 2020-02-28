@@ -69,7 +69,16 @@ class App extends Component {
               <Route
                 exact
                 path="/homePage"
-                render={props => <HomePage {...props} />}
+                render={props => <HomePage {...props} 
+                notes={this.state.savedNotes}
+                rendering={this.rendering}
+                propFunctionThatWillSetTheStateInApp={
+                  this.propFunctionThatWillSetTheStateInApp
+                }
+                addNewNotes={this.addNewNotes}
+
+                // addSearch={this.addSearch}
+                />}
               />
               <Route
                 exact

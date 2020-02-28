@@ -61,10 +61,10 @@ class WorkPage extends Component {
     return (
       <div className="pages">
         <NavBar travel={this.travel} toggleSearch={this.toggleSearch} />
-        <section className="page-organizer">
+        <section className="page-organizer ">
           {/* <WorkFolders /> */}
           {this.state.search ? (
-            <Notes rendering={this.props.rendering} notes={this.props.notes} />
+            <Notes rendering={this.props.rendering} notes={this.props.notes} {...this.props} />
           ) : (
             <DisplaySearch
               // question={this.state.urlquestion}

@@ -26,7 +26,7 @@ class Notes extends Component {
       console.log(res.data, this.state.takeNotes);
       let copyOfTakeNotes = [...this.state.takeNotes];
       copyOfTakeNotes.push(res.data.ops[0]);
-      console.log(copyOfTakeNotes)
+      console.log(copyOfTakeNotes);
       this.setState({
         takeNotes: copyOfTakeNotes
       });
@@ -36,10 +36,9 @@ class Notes extends Component {
     let copyOfNotes = [...this.state.takeNotes];
     // copyOfNotes.push({titleOf: this.props.title})
     // copyOfNotes.push({contentOf: this.props.question})
-    console.log(copyOfNotes)
+    console.log(copyOfNotes);
     return copyOfNotes.map((each, key) => {
       return (
-
         <Cardnotes
           key={key}
           title={each.title}
@@ -72,24 +71,26 @@ class Notes extends Component {
     console.log(this.props);
     return (
       <div>
-        <div className="note-container">
-          <form onSubmit={this.handleSubmit}>
-            <input
-              onChange={this.handleChange}
-              placeholder="Title"
-              name="title"
-              type="text"
-            />
-            <input
-              onChange={this.handleChange}
-              placeholder="Content"
-              name="content"
-              type="text"
-            />
-            <input onChange={this.handleChange} type="submit" />
-          </form>
-        </div>
-        <div>
+        {this.props.location.pathname !== "/HomePage" && (
+          <div className="note-container fixIt3">
+            <form className='freakingNote' onSubmit={this.handleSubmit}>
+              <input className='barTitle'
+                onChange={this.handleChange}
+                placeholder="Title"
+                name="title"
+                type="text"
+              />
+              <input className='barLink'
+                onChange={this.handleChange}
+                placeholder="Link"
+                name="content"
+                type="text"
+              />
+              <input className='submit2' onChange={this.handleChange} type="submit" />
+            </form>
+          </div>
+        )}
+        <div className='fixIt2'>
           <ul>
             {this.displayNote()}
             {this.DSaveNotes()}
